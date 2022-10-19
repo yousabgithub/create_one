@@ -17,6 +17,7 @@ import 'myProvider/meal_provider.dart';
 import 'myProvider/theme_provider.dart';
 
 void main() async {
+  //yousab
   WidgetsFlutterBinding.ensureInitialized();
 
   var pref = await SharedPreferences.getInstance();
