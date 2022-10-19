@@ -16,7 +16,7 @@ class TabsScreen extends StatefulWidget {
 }
 
 class _TabsScreenState extends State<TabsScreen> {
- late List<Map<String, Object>> _pages;
+  //late List<Map<String, Object>> _pages;
 
   int index = 0;
 
@@ -74,7 +74,7 @@ class _TabsScreenState extends State<TabsScreen> {
           unselectedItemColor:
               useWhiteForeground(primaryColor) ? Colors.white : Colors.black,
           onTap: selectPage,
-          items:  [
+          items: [
             BottomNavigationBarItem(
               icon: const Icon(
                 Icons.category,
@@ -83,11 +83,11 @@ class _TabsScreenState extends State<TabsScreen> {
               label: lan.getText('tab-categories'),
             ),
             BottomNavigationBarItem(
-                icon:const Icon(
+                icon: const Icon(
                   Icons.favorite,
                   size: 18,
                 ),
-                label:lan.getText('tab-favorites') ),
+                label: lan.getText('tab-favorites')),
           ],
         ),
       ),

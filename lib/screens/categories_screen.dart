@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mealplus/myProvider/meal_provider.dart';
+import '../myProvider/meal_provider.dart';
 
 import 'package:provider/provider.dart';
 

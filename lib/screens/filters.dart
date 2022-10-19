@@ -8,7 +8,7 @@ import 'package:provider/provider.dart';
 
 class FiltersScreen extends StatefulWidget {
   static const route = 'FiltersScreen_route';
-  bool fromOnBoarding;
+ final bool fromOnBoarding;
 
   FiltersScreen({this.fromOnBoarding = false});
 

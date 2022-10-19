@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_colorpicker/flutter_colorpicker.dart';
-import 'package:mealplus/onBoarding_screen.dart';
 
-import 'package:mealplus/screens/categories_screen.dart';
-import 'package:mealplus/screens/category_meals.dart';
-import 'package:mealplus/screens/filters.dart';
-import 'package:mealplus/screens/meal_information_screen.dart';
-import 'package:mealplus/screens/tabs_screen.dart';
+import '../onBoarding_screen.dart';
 
-import 'package:mealplus/screens/theme_screenx.dart';
+import '../screens/categories_screen.dart';
+import '../screens/category_meals.dart';
+import '../screens/filters.dart';
+import '../screens/meal_information_screen.dart';
+import '../screens/tabs_screen.dart';
+
+import '../screens/theme_screen.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -41,12 +41,11 @@ void main() async {
     ),
   );
 }
-///dbdgdg
+
 class MyApp extends StatelessWidget {
-  Widget mainScreen;
+  final Widget mainScreen;
 
   MyApp(this.mainScreen);
-
 
   @override
   Widget build(BuildContext context) {
@@ -72,14 +71,14 @@ class MyApp extends StatelessWidget {
               titleMedium: const TextStyle(
                 fontSize: 25,
                 fontWeight: FontWeight.w500,
-                fontFamily: 'Raleway',
+                fontFamily: 'Style1',
                 color: Colors.white70,
                 // color: useWhiteForeground(primaryColor)? Colors.white:Colors.black
               ),
               titleLarge: const TextStyle(
                 color: Colors.white70,
 
-                ///MealsDrawerAndAllAtribute
+                ///MealsDrawer And All Attribute
                 fontSize: 25,
                 fontWeight: FontWeight.w600,
                 fontFamily: 'RobotoCondensed',
@@ -87,24 +86,27 @@ class MyApp extends StatelessWidget {
               bodySmall: const TextStyle(
                 fontSize: 23,
                 fontWeight: FontWeight.w300,
-                fontFamily: 'Raleway',
+                fontFamily: 'Style1',
               ),
               bodyLarge: const TextStyle(
                 fontSize: 27,
                 fontWeight: FontWeight.w300,
                 fontFamily: 'RobotoCondensed',
               ),
-          labelSmall: const TextStyle(
-            /// SubTitle Filters
-            fontSize: 16,
-            fontWeight: FontWeight.w600,
-           color: Colors.white70,
-          ),
-            ), colorScheme: ColorScheme.fromSwatch(primarySwatch: primaryColor).copyWith(secondary: accentColor),
+              labelSmall: const TextStyle(
+                /// SubTitle Filters
+                fontSize: 16,
+                fontWeight: FontWeight.w600,
+                color: Colors.white70,
+              ),
+            ),
+        colorScheme: ColorScheme.fromSwatch(primarySwatch: primaryColor)
+            .copyWith(secondary: accentColor),
       ),
       theme: ThemeData(
         primarySwatch: primaryColor,
-       colorScheme: ColorScheme.fromSwatch(primarySwatch: primaryColor).copyWith(secondary: accentColor),
+        colorScheme: ColorScheme.fromSwatch(primarySwatch: primaryColor)
+            .copyWith(secondary: accentColor),
         canvasColor: const Color.fromARGB(255, 255, 179, 179),
         textTheme: ThemeData.light().textTheme.copyWith(
               titleLarge: const TextStyle(
@@ -116,30 +118,30 @@ class MyApp extends StatelessWidget {
               titleMedium: const TextStyle(
                 fontSize: 25,
                 fontWeight: FontWeight.w500,
-                fontFamily: 'Raleway',
+                fontFamily: 'Style1',
                 color: Colors.black,
               ),
               titleSmall: const TextStyle(
                   fontSize: 23,
                   fontWeight: FontWeight.w600,
-                  fontFamily: 'Raleway',
+                  fontFamily: 'Style1',
                   color: Colors.white),
               bodySmall: const TextStyle(
                   fontSize: 23,
                   fontWeight: FontWeight.w300,
-                  fontFamily: 'Raleway',
+                  fontFamily: 'Style1',
                   color: Colors.black),
               bodyLarge: const TextStyle(
                 fontSize: 27,
                 fontWeight: FontWeight.w300,
                 fontFamily: 'RobotoCondensed',
               ),
-          labelSmall: const TextStyle(
-            /// SubTitle Filters
-            fontSize: 16,
-            fontWeight: FontWeight.w600,
-            color: Colors.black,
-          ),
+              labelSmall: const TextStyle(
+                /// SubTitle Filters
+                fontSize: 16,
+                fontWeight: FontWeight.w600,
+                color: Colors.black,
+              ),
             ),
       ),
       routes: {

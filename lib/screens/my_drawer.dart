@@ -4,7 +4,7 @@ import 'package:mealplus/myProvider/theme_provider.dart';
 
 import 'package:mealplus/screens/tabs_screen.dart';
 
-import 'package:mealplus/screens/theme_screenx.dart';
+import 'package:mealplus/screens/theme_screen.dart';
 import 'package:provider/provider.dart';
 
 import '../myProvider/language_provider.dart';
